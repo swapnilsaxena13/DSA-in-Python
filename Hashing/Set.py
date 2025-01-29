@@ -28,8 +28,10 @@ s.add(30)  # Adds a single element
 print("After add(30):", s)
 s.add(30)  # Adding duplicate, set remains unchanged
 print("After adding duplicate 30:", s)
+
 s.update([40, 50])  # Adds multiple elements
 print("After update([40, 50]):", s)
+
 s.update([60, 70], [80, 90])  # Adds elements from multiple iterables
 print("After multiple updates:", s)
 
@@ -65,6 +67,7 @@ print("Difference (method):", s1.difference(s2))
 
 # Symmetric Difference: Elements not common to both sets
 print("Symmetric Difference:", s1 ^ s2)
+
 
 # --- Set Relationship Operations ---
 print("\n--- Set Relationship Operations ---")

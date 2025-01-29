@@ -18,12 +18,14 @@ d = {110: 'abc', 101: 'xyz', 105: 'pqr'}
 print(d.get(101))  # Output: xyz
 print(d.get(125))  # Output: None
 print(d.get(125, "NA"))  # Output: NA
+print(d.get(110, "NA"))  # Output: abc
 
 # Checking for the existence of a key before accessing
 if 125 in d:
     print(d[125])
 else:
     print("NA")  # Output: NA
+
 
 # Modifying and removing elements in a dictionary
 d = {110: 'abc', 101: 'xyz', 105: 'pqr', 106: 'bcd'}
