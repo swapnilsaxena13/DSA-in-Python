@@ -21,7 +21,7 @@ print("#############")
 # Additional comparisons
 print("abcd > abc ", "abcd" > "abc")  # True ("abcd" has an extra character)
 print("ZAB > ABC", "ZAB" > "ABC")      # True (Unicode of 'Z' > 'A')
-print("abc > ABC", "abc" > "ABC")      # True (Unicode of 'a' > 'A')
+print("abc > ABC ", "abc" > "ABC")      # True (Unicode of 'a' > 'A')
 print("x > abcd", "x" > "abcd")        # True (Unicode of 'x' > 'a')
 
 # Notes:

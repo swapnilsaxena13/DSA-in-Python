@@ -19,6 +19,15 @@ print(s3)  # Output: geeks
 print(s1.islower())  # Output: True
 print(s2.isupper())  # Output: True
 
+# The isdigit() method checks if a string contains only digits (0-9).
+# It returns True if all characters are numeric; otherwise, False.
+
+print("123".isdigit())    # True (only digits)
+print("abc123".isdigit()) # False (contains letters)
+print("12.3".isdigit())   # False (contains a decimal point)
+print("123 456".isdigit()) # False (contains a space)
+
+
 s = "GeeksforGeeks Python Course"
 print(s.startswith("Geeks"))  # Output: True
 print(s.endswith("Course"))  # Output: True
