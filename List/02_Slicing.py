@@ -66,3 +66,4 @@ s2 = s1[:]
 print(l1 is l2)  # False (different objects)
 print(t1 is t2)  # True (same object)
 print(s1 is s2)  # True (same object)
+

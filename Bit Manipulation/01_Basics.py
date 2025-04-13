@@ -24,7 +24,7 @@ In bitwise operations, **0 and 1 hold different power roles** depending on the o
 ---
 
 ### **1. Bitwise AND (`&`) - 0 is Powerful, 1 is Powerless**  
-- `0` **dominates** because `A & 0 = 0` (forcefully turns OFF a bit).  
+- `0` **powerfull** because `A & 0 = 0` (forcefully turns OFF a bit).  
 - `1` **is powerless** because `A & 1 = A` (keeps the bit unchanged).  
 - **Example:**  
   ```
@@ -42,10 +42,10 @@ In bitwise operations, **0 and 1 hold different power roles** depending on the o
 - `1` **is powerful** because `A | 1 = 1` (forcefully turns ON a bit).  
 - **Example:**  
   ```
-  1101
+   1101
   |1011
   -----
-  1111  (Result)
+   1111  (Result)
   ```
 - **Concept:** OR ensures that as long as **one of the bits is 1**, the result will always be `1`.
 

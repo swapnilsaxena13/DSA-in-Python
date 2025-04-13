@@ -86,6 +86,8 @@ print("After insert:", num_list)  # Output: [10, 15, 20, 14, 30]
 num_list.extend([40, 50])
 print("After extend:", num_list)  # Output: [10, 15, 20, 14, 30, 40, 50]
 
+
+
 # ------------------------------------------
 # Removing Elements from a List
 # ------------------------------------------
@@ -105,6 +107,8 @@ print("After pop:", num_list)  # Output: [10, 20, 14, 30, 40]
 # Deletes an element at a specific index or a slice of elements.
 del num_list[2]
 print("After del:", num_list)  # Output: [10, 20, 30, 40]
+
+
 
 # ------------------------------------------
 # Reversing a List
@@ -183,3 +187,16 @@ print("Integer List:", int_list)
 #   - pop(): O(1) time (for last element), O(n) time (for first/middle elements), O(1) space
 # Sorting: O(n log n) time, O(n) space
 # Reversing: O(n) time, O(1) space
+
+
+arr = [73, 74, 75, 71, 69, 72, 76, 73]
+
+# Loop through the indices of the list in reverse order
+# range(start, stop, step): 
+# - start = len(temperatures) - 1 (last index of the list)
+# - stop = -1 (loop stops before reaching -1, so it includes index 0)
+# - step = -1 (decrement by 1 in each iteration)
+for i in range(len(arr) - 1, -1, -1):
+    # Append the current index to the result list
+    print(i,end=" ")
+
