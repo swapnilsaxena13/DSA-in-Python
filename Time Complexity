@@ -48,7 +48,9 @@ Time complexity is an essential concept in Data Structures and Algorithms (DSA) 
 3. **Logarithmic Time: O(log n)** – Very efficient, often seen in divide-and-conquer algorithms like binary search.
 4. **Linearithmic Time: O(n log n)** – Often seen in sorting algorithms, it’s considered efficient for larger datasets.
 5. **Quadratic Time: O(n²)** – Acceptable for small inputs but inefficient for large datasets. Avoid if possible (e.g., for sorting or pair-based problems).
-6. **Exponential Time: O(2^n), O(n!)** – These are very inefficient and not practical for large inputs. They are often used in brute-force solutions and can lead to timeouts for large problems.
+
+6. **Exponential Time: O(2^n), O(n!)** – These are very inefficient and not practical 
+for large inputs. They are often used in brute-force solutions and can lead to timeouts for large problems.
 
 ---
 
