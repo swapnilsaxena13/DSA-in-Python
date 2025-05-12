@@ -1,4 +1,7 @@
-import heapq  # Importing heapq module to implement a heap queue
+
+# Importing heapq module to implement a heap queue
+
+import heapq  
 
 # -------------------------------
 # Creating a Min-Heap in Python
@@ -18,6 +21,7 @@ print("The created heap is:", list(li))  # Output: [1, 3, 9, 7, 5]
 # -------------------------------
 # Pushing and Popping Elements Efficiently
 # -------------------------------
+
 # heappush(heap, ele) -> Inserts an element while maintaining the heap order
 heapq.heappush(li, 4)  # Pushes 4 into the heap
 print("The modified heap after push is:", list(li))  # Output: [1, 3, 4, 7, 5, 9]
@@ -29,6 +33,7 @@ print("The popped and smallest element is:", smallest)  # Output: 1
 # -------------------------------
 # Pushing and Popping Simultaneously
 # -------------------------------
+
 # heappushpop(heap, ele) -> Pushes an element and then pops the smallest one
 li1 = [5, 1, 9, 4, 3]
 heapq.heapify(li1)
@@ -44,6 +49,7 @@ print("The popped item using heapreplace() is:", popped_replace)  # Output: 3
 # -------------------------------
 # Finding Largest and Smallest Elements
 # -------------------------------
+
 # nlargest(k, iterable) -> Returns k largest elements
 # nsmallest(k, iterable) -> Returns k smallest elements
 
