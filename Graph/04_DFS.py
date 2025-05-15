@@ -1,5 +1,30 @@
-# Python3 DFS traversal of a Graph
+"""
+DFS Key Points to Avoid Mistakes
 
+
+Loop over indices, not lists:
+
+Use for node in range(len(adj)) instead of for element in adj).
+🔑 Reason: adj contains lists, and lists are unhashable (can’t be used in sets).
+
+
+Use self. for instance variables:
+
+When you define self.res, always access it using self.res, not just res.
+🔑 Reason: Without self., Python looks for a local variable, not a class variable.
+
+
+Avoid modifying a set with unhashable types:
+
+Only store hashable types (like int, str, tuple) in set().
+🔑 Mistake: Trying to check or add a list ([2, 3]) in visited causes an error.
+
+
+Initialize class variables before using them:
+
+Always initialize self.res = [] inside the method before appending to it.
+🔑 Reason: Otherwise, it causes NameError or behaves unexpectedly.
+"""
 # --------------------------------------------------
 # Depth First Search (DFS) for a Graph
 # --------------------------------------------------
