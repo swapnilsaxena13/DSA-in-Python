@@ -55,6 +55,22 @@ f(i) = min(
         f(i-2) + abs(height[i] - height[i-2])
       )
 """
+# ------------------------------------------------------------
+# Memoization (Top-Down Recursive DP)
+# ------------------------------------------------------------
+def recur(ind,height):
+    if ind ==0:
+        return 0
+    first=recur(ind-1,height)+abs(height[ind]-height[ind-1])
+    second=float('inf')
+    if ind>1:
+        second=recur(ind-2,height)+abs(height[ind]-height[ind-2])
+    return min(first,second)
+
+if __name__ == "__main__":
+    height = [30, 10, 60, 10, 60, 50]
+    print("Minimum Energy (Recursive):", recur(len(height) - 1, height))
+
 
 # ------------------------------------------------------------
 # Memoization (Top-Down Recursive DP)
@@ -146,6 +162,3 @@ Complexity:
 - Time: O(N)
 - Space: O(1) <- NO external dp array! 🔥
 """
-
-# ---------------------- END OF NOTES ----------------------
-# 🌟 Keep Grinding! DP is pure magic once you feel it! 🌟

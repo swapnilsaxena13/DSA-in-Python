@@ -16,6 +16,15 @@ examples to illustrate how each conversion works.
 # | String → Integer                | int(s)                                    | "123"                      | 123                 |
 # | List → Integer                  | int("".join(map(str, lst)))               | [1, 2, 3]                  | 123                 |
 # | Integer → List (digits)         | list(map(int, str(num)))                  | 123                        | [1, 2, 3]           |
+# Example:
+ """
+result = map(int, ['1', '2', '3'])
+This is equivalent to:
+
+result = []
+for x in ['1', '2', '3']:
+    result.append(int(x))
+"""
 # | List of Integers → List of Strings | list(map(str, lst))                      | [1, 2, 3]                  | ['1', '2', '3']     |
 # | Tuple → List                     | list(tup)                                 | (1, 2, 3)                  | [1, 2, 3]           |
 # | List → Tuple                     | tuple(lst)                                | [1, 2, 3]                  | (1, 2, 3)           |
