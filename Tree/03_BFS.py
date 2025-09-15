@@ -38,7 +38,8 @@ def printLevelOrder(root):
     
     while len(queue) > 0:
         print(queue[0].key, end=" ")
-        node = queue.pop(0)
+        
+        node = queue.pop(0)# we are doing two things here storing the node and pop the first element
         
         if node.left is not None:
             queue.append(node.left)
