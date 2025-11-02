@@ -68,3 +68,13 @@ print("The 3 smallest numbers in the list are:", smallest_3)  # Output: [1, 3, 4
 # 2. heappushpop() is more efficient than calling heappush() followed by heappop().
 # 3. heapreplace() is different from heappushpop() as it always removes the smallest element first.
 # 4. nlargest() and nsmallest() do not modify the heap; they just return the required elements.
+"""
+| Function                        | Description                      | Time Complexity | 
+| ------------------------------- | -------------------------------- | --------------- | 
+| `heapq.heappush(heap, item)`    | Push an element into heap        | **O(log n)**    | 
+| `heapq.heappop(heap)`           | Remove and return smallest item  | **O(log n)**    | 
+| `heapq.heapify(x)`              | Convert list to heap             | **O(n)**        | 
+| `heapq.heappushpop(heap, item)` | Push new item, then pop smallest | **O(log n)**    |
+| `heapq.heapreplace(heap, item)` | Pop smallest, then push new      | **O(log n)**    |
+| `heapq.nlargest(k, iterable)`   | Get k largest elements           | **O(n log k)**  |
+| `heapq.nsmallest(k, iterable)`  | Get k smallest elements          | **O(n log k)**  | 
