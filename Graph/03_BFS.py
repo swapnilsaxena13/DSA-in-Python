@@ -124,7 +124,7 @@ def BFS_full(adj, V):
     for u in range(V):
         if not visited[u]:
             BFSUtil(u, adj, visited)  # Call BFS for each unvisited node
-
+            
 
 """
 Driver Code for Connected Graph BFS
