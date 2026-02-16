@@ -10,7 +10,7 @@ The number of ways to climb a staircase of height k with a max number of steps s
 numWays[k - 1] + numWays[k - 2] + ... + numWays[k - s]
 This is because if you can advance between 1 and s steps, then from each step k - 1, k - 2, ..., k - s, you can directly advance to the top of a staircase of height k. By adding the number of ways to reach all steps that you can directly advance to the top step from, you determine how many ways there are to reach the top step.
 """
-"""
+
 
 
 # Recursive Way of doing this problem
@@ -25,8 +25,8 @@ def staircase_traversal(height:int, maxSteps:int):
     return totalWays
 
     
-    The time complexity of this code is O(
-    """
+ #   The time complexity of this code is O(
+    
          
 """
 Now, we have to transform this code into a memoized one so for that we will try to store the previous value into a Hashmap(Dictionary) to lower the time complexity """
