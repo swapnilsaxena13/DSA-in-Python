@@ -28,10 +28,10 @@ In bitwise operations, **0 and 1 hold different power roles** depending on the o
 - `1` **is powerless** because `A & 1 = A` (keeps the bit unchanged).  
 - **Example:**  
   ```
-  1101
+   1101
   &1011
   -----
-  1001  (Result)
+   1001  (Result)
   ```
 - **Concept:** AND only returns `1` if both inputs are `1`, otherwise, the `0` overpowers and forces the result to `0`.
 
@@ -56,10 +56,10 @@ In bitwise operations, **0 and 1 hold different power roles** depending on the o
 - `1` **toggles the bit** because `A ^ 1 = Inverted(A)`.  
 - **Example:**  
   ```
-  1101
+   1101
   ^1011
   -----
-  0110  (Result)
+   0110  (Result)
   ```
 - **Concept:** XOR is useful for **toggling bits**, as `1` in XOR acts like a switch.
 
